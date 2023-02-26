@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> cong tru nhan chia</title>
+</head>
+<body>
+
+<input type = "Number" id="num1" placeholder=" Nhap so vao">
+<input type = "Number" id="num2" placeholder=" Nhap so vao">
+<table>
+    <tr>
+        <td><button onclick="tong()">Tong</button></td>
+        <td><button onclick="hieu()">Hieu</button></td>
+        <td><button onclick="tinh()">Nhan</button></td>
+        <td><button onclick="thuong()">Thuong</button></td>
+    </tr>
+</table>
+</br>
+<p> Result</p>
+<div id = "demo">ket qua</div>
+</body>
+</html>
+<script>
+    function tong() {
+        let Number1 = document.getElementById("num1").value;
+        let Number2 = document.getElementById("num2").value;
+        let Result = Number(Number1) + Number(Number2);
+        document.getElementById("demo").innerHTML=Result;
+    }
+    function hieu() {
+        let Number1 = document.getElementById("num1").value;
+        let Number2 = document.getElementById("num2").value;
+        let Result = Number1 - Number2;
+        document.getElementById("demo").innerHTML = Result;
+    }
+    function tinh() {
+        let Number1 = document.getElementById("num1").value;
+        let Number2 = document.getElementById("num2").value;
+        let Result = Number1 * Number2;
+        document.getElementById("demo").innerHTML = Result;
+    }
+    function thuong() {
+        let Number1 = document.getElementById("num1").value;
+        let Number2 = document.getElementById("num2").value;
+        let Result = Number1 / Number2;
+        document.getElementById("demo").innerHTML = Result;
+    }
+</script>

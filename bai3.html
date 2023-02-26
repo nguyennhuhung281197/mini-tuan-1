@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>up down click</title>
+</head>
+<body>
+
+    <input type="number" id = "number" value="0">
+    <button onclick="UP()">UP</button>
+    <button onclick="DOWN()">DOWN</button>
+
+</body>
+</html>
+<script>
+
+    function UP() {
+      let data = parseInt(document.getElementById("number").value)
+        document.getElementById("number").value = data + 2;
+    }
+    function DOWN() {
+      let  data = parseInt(document.getElementById("number").value)
+        document.getElementById("number").value = data - 2;
+    }
+</script>
+

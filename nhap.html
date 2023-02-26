@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+<input id="number" type="number" value="0">
+<button onclick="up()">Up</button>
+<button onclick="down()">Down</button>
+
+</body>
+</html>
+<script>
+        function up(){
+        var a=parseInt(document.getElementById("number").value);
+        document.getElementById("number").value= a+2;
+    }
+        function down() {
+        var b=parseInt(document.getElementById("number").value);
+        document.getElementById("number").value=b-2;
+    }
+</script>
